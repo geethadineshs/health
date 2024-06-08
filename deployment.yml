@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: mydep
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       name: deployment
@@ -16,4 +16,3 @@ spec:
       containers:
         - name: c00
           image: geethadinesh/banking-finance-project:4.0
-          
